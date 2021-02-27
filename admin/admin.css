@@ -1,0 +1,62 @@
+html{
+	background-color: #1D507D;
+	height: 100%;
+}
+body {
+	margin: 20px 0px 20px 0px;
+	padding: 5px 10px 5px 10px;
+	font: normal 13px Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	color: #000000;	
+	background-color: #F7F6F1;
+	height: 92%;
+}
+.content {
+	padding: 20px;
+	width: 80%;
+	height: 100%;
+}
+.nav {
+	padding-bottom: 5px;
+	border-bottom: 1px dotted black;
+}
+
+/* -----------------------------------Misc----------- */
+a {
+	text-decoration: none;
+	color: #0237CC;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+
+img {  
+    padding: 1px;  
+    border: 1px solid #021a40;  
+} 
+h1{ 
+  font: normal 18px Verdana, Tahoma, Arial, Helvetica, sans-serif; 
+}
+h2{  
+ font: normal 16px Verdana, Tahoma, Arial, Helvetica, sans-serif; 
+}  
+h3{  
+ font: normal 14px Verdana, Tahoma, Arial, Helvetica, sans-serif;  
+} 
+
+.odd {
+  background-color: #fdfdfd;
+}
+ 
+.even{
+  background-color: #e8e8e8;
+}
+
+.logout {
+	float: right;
+	font-weight: 900;
+	margin-top: 10px;
+}
+
+ 
