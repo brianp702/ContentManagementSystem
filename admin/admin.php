@@ -4,7 +4,7 @@ authorize();
 
 include 'header_admin.php';
 	
-$article_id = $_GET['article_id'];
+$article_id = intval($_GET['article_id']);
 
 // delete the article
 if ($_GET['action']=='delete') { 

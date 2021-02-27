@@ -7,7 +7,8 @@ $search_term = $_POST['search_term'];
 	<div class = "post">
 		<h4 style="color: #00F">Search results</h4>	
 		<?
-		$result = mysql_query("SELECT * FROM articles WHERE article LIKE '%$search_term%'");
+		// TO DO: sanitize search_term
+		$result = mysql_query("SELECT article_id, title FROM articles WHERE article LIKE '%$search_term%'");
 		if(mysql_num_rows($result)!=0){			
 			$i=1;			
 			while($row = mysql_fetch_array($result)){

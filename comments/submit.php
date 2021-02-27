@@ -33,7 +33,7 @@ if ($securimage->check($_POST['captcha_code']) == false) {
 	header("Location: $domain/health/articles.php?id=".$article_id."&msg=captcha#form");
 	die();
 }
-
+$article_id = intval($article_id);
 // submit to database
 if($username && $comment && !$website)
 {

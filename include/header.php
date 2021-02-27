@@ -2,9 +2,9 @@
 require 'include/connect.php';
 db_connect();
 
-$article_id = $_GET['id'];
+$article_id = intval($_GET['id']);
 
-$result = mysql_query("select * from articles where article_id='$article_id'");
+$result = mysql_query("select title, meta_tags, description from articles where article_id='$article_id'");
 while($row = mysql_fetch_array($result))
 {
 	$title = stripslashes($row['title']);

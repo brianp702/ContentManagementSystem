@@ -3,9 +3,9 @@
 include '../include/connect.php';
 db_connect();
 
-$comment_id = $_GET['comment_id'];
+$comment_id = intval($_GET['comment_id']);
 $censored = "[Comment flagged as inappropriate. Will be reviewed by admin.]";
-$article_id = $_GET['article_id'];
+$article_id = intval($_GET['article_id']);
 
 $result = mysql_query("select comment from comments where comment_id='$comment_id'");
 	while($row = mysql_fetch_array($result)){

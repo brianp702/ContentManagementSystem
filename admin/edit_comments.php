@@ -11,7 +11,7 @@ if(get_magic_quotes_gpc()) {
 else {
 	$comment = mysql_real_escape_string(strip_tags($_POST["comment"]));
 }
-$comment_id = $_GET['comment_id'];
+$comment_id = intval($_GET['comment_id']);
      	
 // delete the comment
 if ($_GET['action']=='delete') { 
@@ -43,7 +43,7 @@ elseif ($_GET['action']=='undelete') {
 	});
 </script>
 <?
-$article_id = $_GET['id'];
+$article_id = intval($_GET['id']);
 
 $result = mysql_query("
 	SELECT
@@ -67,8 +67,7 @@ $result = mysql_query("
 		echo $title;
 	} 
 	*/
-	?>		
-
+	?>
 
 	<table style="border: 1px grey solid" width="500px" class="striped" cellpadding="5px">
 		<tr style="background: #3C9DD0; color:white;">
@@ -97,8 +96,7 @@ $result = mysql_query("
 				<?
 				}
 				?>	
-			</tr>				
-		
+			</tr>		
 <?
 }
 ?>

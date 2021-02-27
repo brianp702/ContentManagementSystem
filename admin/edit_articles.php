@@ -43,7 +43,7 @@ if ($_GET['status']=='uploaded'){
 				}		
 				//-------------------------------------------------------
 				
-				$article_id = $_GET['id'];
+				$article_id = intval($_GET['id']);
 				mysql_query("update articles set image_url='$image_url' where article_id='$article_id'");
 			}
 		}
@@ -75,7 +75,7 @@ if ($_GET['status']=='edited'){
 			$image_url = "grapes.jpg";
 		}
 
-		$article_id = $_GET['id']; 
+		$article_id = intval($_GET['id']);
 		mysql_query("
 			UPDATE articles 
 			SET 
@@ -199,7 +199,7 @@ if (($_GET['status']=='downloaded') && ($_POST['image_url']!='')){
 <? 
 
 // -------- get the article info from database--------------------------------------------
-$article_id = $_GET['id']; 
+$article_id = intval($_GET['id']);
 $result = mysql_query("select date, title, article, image_url, description, meta_tags from articles where article_id='$article_id'");	
 $row = mysql_fetch_array($result);
 		
