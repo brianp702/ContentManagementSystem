@@ -8,18 +8,15 @@ $search_term = $_POST['search_term'];
 		<h4 style="color: #00F">Search results</h4>	
 		<?
 		$result = mysql_query("SELECT * FROM articles WHERE article LIKE '%$search_term%'");
-		if(mysql_num_rows($result)!=0){
-			
-			$i=1;
-			
+		if(mysql_num_rows($result)!=0){			
+			$i=1;			
 			while($row = mysql_fetch_array($result)){
 				echo "$i . <a href='articles.php?id=".$row['article_id']."'>".$row['title']."</a><br /><br />";
 				$i++;
 			}
 		}
 		else {
-			echo "No results found for '$search_term'.";
-			
+			echo "No results found for '$search_term'.";			
 		}
 		?>
 	</div>

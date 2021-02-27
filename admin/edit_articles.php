@@ -2,7 +2,6 @@
 include '../include/functions.php';
 authorize();
 
-
 //-------------------------------------------------------------------------------------------------------
 include '../include/classes.php';
 
@@ -54,9 +53,6 @@ if ($_GET['status']=='uploaded'){
 	}
 }
 //--------------------------------------------------------------------------------------------------------
-
-
-
 
 //---------- if article was edited-----------------------------------------------------------------
 if ($_GET['status']=='edited'){
@@ -139,20 +135,20 @@ if (($_GET['status']=='downloaded') && ($_POST['image_url']!='')){
 	//resize it
 	list($width,$height) = getimagesize("../images/".$image_url);
 
-				// resize images wider than 640
-				if ( $width > 340 ){				
-					$image = new SimpleImage();
-					$image->load("../images/".$image_url);
-					$image->resizeToWidth(340);
-					$image->save("../images/".$image_url);
-				}
-				// resize images taller than 400
-				else if ( $height > 200 ){				
-					$image = new SimpleImage();
-					$image->load("../images/".$image_url);
-					$image->resizeToHeight(200);
-					$image->save("../images/".$image_url);
-				}	
+		// resize images wider than 640
+		if ( $width > 340 ){				
+			$image = new SimpleImage();
+			$image->load("../images/".$image_url);
+			$image->resizeToWidth(340);
+			$image->save("../images/".$image_url);
+		}
+		// resize images taller than 400
+		else if ( $height > 200 ){				
+			$image = new SimpleImage();
+			$image->load("../images/".$image_url);
+			$image->resizeToHeight(200);
+			$image->save("../images/".$image_url);
+		}	
 }
 ?>
 

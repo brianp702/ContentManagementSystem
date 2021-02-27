@@ -42,7 +42,6 @@ if (!$title){
 ?>				
 	</div>
 
-
 <!-- comments and right column -->
 <?php
 	

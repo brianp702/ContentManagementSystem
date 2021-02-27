@@ -17,12 +17,12 @@ $result = mysql_query("select comment from comments where comment_id='$comment_i
 		mysql_error();
 		
 		//notify me of the flagging via email
-		$to = 'jiggapayne2@hotmail.com';
-		$from = 'neo-conception';
+		$to = '';
+		$from = '';
 		$body = 'Comment ID:'.$comment_id.' Censored: '.$censored_mail.' Article ID: '.$article_id;
 		$headers = "From: $from";
 		mail($to,$from,$body,$headers);
 			
 	}
-	header("Location: http://neo.brianpayne.us/articles.php?id=".$article_id."&comment_id=".$comment_id."&flag=yes#comment".$comment_id);
+	header("Location: http://neo..us/articles.php?id=".$article_id."&comment_id=".$comment_id."&flag=yes#comment".$comment_id);
 ?>

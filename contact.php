@@ -1,8 +1,8 @@
 <?php
-include 'include/header.php';
+	include 'include/header.php';
 
-$message = "test email body";
-mail('jiggapayne2@hotmail.com', 'subject', $message);
+	$message = "test email body";
+	mail('', 'subject', $message);
 ?>
 
 <!-- contact form -->
@@ -21,8 +21,8 @@ mail('jiggapayne2@hotmail.com', 'subject', $message);
 			if ($_POST){
 						$from = stripslashes($_POST['email']);
 						$body = stripslashes($_POST['body']);
-						$to = 'jiggapayne2@hotmail.com';
-						$subject = 'neoconception.org';
+						$to = '';
+						$subject = '';
 						$headers = "From: $from";
 						
 						// validate e-mail address
@@ -63,7 +63,6 @@ mail('jiggapayne2@hotmail.com', 'subject', $message);
 			
 	</div>
 </div>
-
 
 <!-- right column -->
 <?php

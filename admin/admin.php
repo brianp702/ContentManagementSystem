@@ -110,9 +110,7 @@ echo "<a href='new_article.php'><strong style='font-weight: 900'>New article</st
 				<td><a style="color: green;" href="<?$_SERVER['PHP_SELF']?>?action=undelete&article_id=<?echo $article_id;?>">restore</a></td>
 				<?
 				}
-				?>	
-
-				
+				?>				
 			</tr>				
 		
 <?

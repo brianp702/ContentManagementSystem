@@ -32,9 +32,7 @@ elseif ($_GET['action']=='undelete') {
 	");
 	echo mysql_error();
 	echo "<center><div id='message' style='color: #797876; background: #FFF1A8; padding: 5px;'><strong>Comment was restored.</strong></div></center>";		
-}		
-
-
+}
 
 ?>
 <script type="text/javascript">  

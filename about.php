@@ -9,11 +9,10 @@ include 'include/header.php';
 	</div>
 	
 	<div class='post'>
-		<h4 style='color: #0000FF'>About Neo-conception.org</h4>
+		<h4 style='color: #0000FF'>About</h4>
 		<p>hello</p>
 	</div>
 </div>
-
 
 <!-- right column -->
 <?php

@@ -1,10 +1,10 @@
 <?php
 function db_connect()
 {
-$hostname='jiggapayne.db.6826316.hostedresource.com';
-$username='jiggapayne';
-$password='Obsolet3';
-$dbname='jiggapayne';
+$hostname='.db.6826316.hostedresource.com';
+$username='';
+$password='';
+$dbname='';
 
 $con = mysql_connect($hostname,$username, $password);
 mysql_connect($hostname,$username, $password) OR DIE ('Unable to connect to database.');
