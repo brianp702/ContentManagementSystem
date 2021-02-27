@@ -200,7 +200,7 @@ if (($_GET['status']=='downloaded') && ($_POST['image_url']!='')){
 
 // -------- get the article info from database--------------------------------------------
 $article_id = $_GET['id']; 
-$result = mysql_query("select * from articles where article_id='$article_id'");	
+$result = mysql_query("select date, title, article, image_url, description, meta_tags from articles where article_id='$article_id'");	
 $row = mysql_fetch_array($result);
 		
 	$date = $row['date'];	

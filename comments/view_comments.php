@@ -5,7 +5,7 @@
 		<a name="comments"></a>
 	
 		<?php
-		$result = mysql_query("select * from comments where article_id='$article_id' and is_active = '1' order by comment_id");
+		$result = mysql_query("select website, username, date, comment, comment_id from comments where article_id='$article_id' and is_active = '1' order by comment_id");
 		echo "<div class='posted'>" . mysql_num_rows($result) . " comments</div></div>";
 		
 		while($row = mysql_fetch_array($result))

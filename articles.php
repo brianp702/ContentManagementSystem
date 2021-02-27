@@ -3,7 +3,7 @@ include 'include/header.php';
 
 //gets article, title, and image from database and displays them
 
-$result = mysql_query("select * from articles where article_id='$article_id'");
+$result = mysql_query("select article,image_url,title,date from articles where article_id='$article_id'");
 while($row = mysql_fetch_array($result)){
 
 	$image_url = $row['image_url'];
