@@ -8,8 +8,7 @@
 	<script type="text/javascript" src="jscripts/jquery-1.4.2.min.js"></script>		
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Welcome to <?echo $_SERVER['SERVER_NAME']; echo $_SERVER['PHP_DIR']?></title>
-	<meta name="keywords" content="health,diet,longevity,diseases" />
-	<meta name="description" content="Unbiased articles on health, fitness and longevity" />
+	<meta name="description" content="" />
 	<link href="default.css" rel="stylesheet" type="text/css" />
 	<link rel="SHORTCUT ICON" href="favicon.ico"/>
 </head>
@@ -29,7 +28,7 @@
 
 	<div class="post">
 		<h4 style='color: #0000FF'>Welcome to <?echo $_SERVER['SERVER_NAME']; echo $_SERVER['PHP_DIR']?></h4> 
-		<p>I focus mainly on health, fitness, and financial peace. Below is a random article to get you started.</p>	
+		<p>Welcome. Below is a random article to get you started.</p>	
 	</div>
 </div>
 
